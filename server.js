@@ -5,11 +5,13 @@ import cors from "cors";
 const app = express();
 app.use(cors());
 
-// Only reliable Yahoo symbols
+// Reliable Yahoo symbols
 const INDEX_SYMBOLS = {
   sensex: "^BSESN",
   nifty: "^NSEI",
   banknifty: "^NSEBANK",
+  midcapnifty: "^NSEMDCP",  // Nifty Midcap 100
+  finnifty: "^NSEFIN",      // FinNifty
   gold: "GC=F"
 };
 
